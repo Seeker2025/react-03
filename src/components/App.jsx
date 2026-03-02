@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { PageTitle } from 'components/PageTitle/PageTitle';
 import { EventBoard } from './EventBoard/EventBoard';
 import upcomingEvents from '../upcoming-events.json';
-console.log(upcomingEvents);
+// console.log(upcomingEvents[2].type);
 
 
 

@@ -13,7 +13,7 @@ export const EventBoard = ({ events }) =>{
                     name = {name}
                     location ={location}
                     speaker = {speaker}
-                    tpye={type}
+                    type={type}
                     start={time.start}
                     end ={time.end}
                               
