@@ -2,23 +2,23 @@
 body{
     background-color: rgb(80, 125, 146);
 }
-.event{
+/* .event{
     position: relative;
     border: 3px dashed black;
     padding: 8px;
     border-radius: 4px;
-}
+} */
 
-.title{
+/* .title{
     margin-top: 0;
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-}
+} */
 
-.info{
+/* .info{
     display: flex;
     align-items: center;
     margin-top: 0;
@@ -28,14 +28,15 @@ body{
     line-height: 24px;
     font-weight: 400;
     letter-spacing: 0.25px;
-}
-.icon{
+} */
+
+/* .icon{
     display: block;
     margin-right: 8px;
     color:rgb(28, 28, 159);
-}
+} */
 
-.chip{
+/* .chip{
     position: absolute;
     top: 4px;
     right: 4px;
@@ -45,9 +46,9 @@ body{
     background-color: #000;
     color: #fff;
    
-}
+} */
 
-.event{
+/* .event{
     background-color: rgb(110, 110, 110);
     padding: 15px;
 }
@@ -60,4 +61,4 @@ body{
 }
 .vip {
     background-color: red;
-}
+} */

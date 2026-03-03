@@ -8,6 +8,7 @@ import {formatEventStart, formatEventDuration} from 'utils';
 import { iconSize } from 'contains';
 // import upcomingEvents from '../../upcoming-events.json';
 // console.log(upcomingEvents[0].ra);
+import { Card, EventName, Info, Chip } from './Event.styled'
 
 
 export const Event = ({name, location, speaker, type, start, end}) =>{
@@ -22,38 +23,39 @@ export const Event = ({name, location, speaker, type, start, end}) =>{
 
     return (
 
-         <div className={css.event}>
-            <h2 className={css.title}>{name}</h2>
+         <Card >
+            <EventName className={css.title}>{name}</EventName>
 
-            <p className={css.info}>
+            <Info>
                 <i className="icon"></i>
                 {/* иконка стиль и размер */}
             <FaMapMarkerAlt className={css.icon} size={iconSize.sm}/>   
             {location }   
-            </p>
+            </Info>
 
-            <p className={css.info}>
+            <Info>
                 <i className="icon"></i>
             <FaUserAlt className={css.icon} size={iconSize.sm}/>    
             {speaker}    
-            </p>
+            </Info>
 
-            <p className={css.info}>
+            <Info>
                 <i className="icon"></i>
             <FaCalendarAlt className={css.icon} size={iconSize.sm}/>      
             {formattedStart}    
-            </p>
+            </Info>
 
-            <p className={css.info}>
+            <Info>
                 <i className="icon"></i>
             <FaClock className={css.icon} size={iconSize.sm}/>     
                
             {duration}  
-            </p>
+            </Info>
         {/* {console.log(type)} */}
-            <span className={`${css.chip} ${css[type]}`}>{type}</span>    
+            {/* <Chip className={`${css.chip} ${css[type]}`}>{type}</Chip>     */}
+            <Chip eventType={type}>{type}</Chip>    
 
-        </div>
+        </Card>
    );
    
 }
