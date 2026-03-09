@@ -8,7 +8,7 @@ export const Card = styled.div`
 `;
 
 export const EventName = styled.h2`
-     margin-top: 0;
+    margin-top: 0;
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
